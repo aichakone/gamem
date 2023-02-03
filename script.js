@@ -3,12 +3,9 @@ const front = document.querySelectorAll('.front')
 const container = document.querySelector('.container')
 const score = document.querySelector('.score span')
 
-
-
 suffleImage()
 clicking()
 function suffleImage(){
-
 
     card.forEach(c=>{
 
@@ -43,15 +40,13 @@ function clicking(){
                 setInterval(() => {
                     
                     container.style.pointerEvents ='all'
-                }, 1000);
+                }, 1500);
  
                 match(filppedCard[0] , filppedCard[1])
             }
         })
     }
 }
-
-
 
 
 function match(cardOne , cardTwo){
@@ -74,6 +69,6 @@ function match(cardOne , cardTwo){
             
             cardOne.classList.remove('flip') 
             cardTwo.classList.remove('flip') 
-        }, 1000);
+        }, 1500);
     }
 }
